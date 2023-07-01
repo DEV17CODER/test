@@ -1,5 +1,5 @@
 const form = document.querySelector("form"),
-    statusTxt = form.querySelector(".button-area span");
+statusTxt = form.querySelector(".button-area span");
 form.onsubmit = (e)=> {
     e.preventDefault();
     statusTxt.style.color = "#OD6EFD";
@@ -12,7 +12,7 @@ form.onsubmit = (e)=> {
     xhr.onload = () => {
         if (xhr.readyState == 4 && xhr.status == 200) {
             let response = xhr.response;
-            if (response.indexOf("required") != -1 || response.indexof("valid") != -1 || response.indexOf("failed") != -1) {
+            if (response.indexOf("required") != -1 || response.indexOf("valid") != -1 || response.indexOf("failed") != -1) {
                 statusTxt.style.color = "red";
             } else {
                 form.reset();
