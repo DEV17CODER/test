@@ -45,7 +45,7 @@ body {
 
 form .dbl-field {
     display: flex;
-    margin-botton: 25px;
+    margin-bottom: 25px;
     justify-content: space-between;
 }
 
