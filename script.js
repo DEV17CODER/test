@@ -7,7 +7,7 @@ form.onsubmit = (e)=> {
     statusTxt.innerText - "Sending your message...";
     form.classList.add("disabled");
 
-    let hr = new XMLHttpRequest();
+    let xhr = new XMLHttpRequest();
     xhr.open("POST", "message.php", true);
     xhr.onload = () => {
         if (xhr.readyState == 4 && xhr.status == 200) {
