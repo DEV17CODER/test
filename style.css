@@ -105,13 +105,13 @@ form .message i {
 form .message textarea {
     min-height: 130px;
     max-height: 230px;
-    max-width: 1004;
+    max-width: 100%;
     min-width: 100%;
     padding: 15px 20px 0 48px;
 }
 
 form .message textarea::-webkit-scrollbar {
-    width: Opx;
+    width: 0px;
 }
 
 .message textared:focus {
@@ -166,7 +166,7 @@ form .button-area {
         margin-bottom: 20px;
     }
 
-    form message textarea {
+    form .message textarea {
         resize: none;
     }
 
