@@ -49,7 +49,7 @@ form .dbl-field {
     justify-content: space-between;
 }
 
-.db1-field .field {
+.dbl-field .field {
     height: 50px;
     display: flex;
     position: relative;
@@ -90,7 +90,7 @@ form .message textarea {
 
 .field input:focus ~ i,
 .message textarea:focus ~ i {
-    color: ‡OD6EFD;
+    color: #0D6EFD;
 }
 
 form .message {
@@ -155,7 +155,7 @@ form .button-area {
         margin: 35px 20px;
     }
 
-    form .db1-field {
+    form .dbl-field {
         flex-direction: column;
         margin-botton: 0px;
     }
