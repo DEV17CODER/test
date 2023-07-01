@@ -1,9 +1,9 @@
 <?php
-    $name = isset($_POST['name']) ? htmlspecialchars($_POST['name']) : '';
-    $email = isset($_POST['email']) ? htmlspecialchars($_POST['email']) : '';
-    $phone = isset($_POST['phone']) ? htmlspecialchars($_POST['phone']) : '';
-    $website = isset($_POST['website']) ? htmlspecialchars($_POST['website']) : '';
-    $message = isset($_POST['message']) ? htmlspecialchars($_POST['message']) : '';
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $website = $_POST['website'];
+    $message = $_POST['message'];
 
     if (!empty($email) && !empty($message)) {
         if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
