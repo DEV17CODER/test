@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family-Poppins:wght@400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +24,7 @@ body {
     width: 715px;
     background: #fff;
     border-radius: 5px;
-    box-shadow: 10px 10px 10px rgba (0, 0, 0, 0.05);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
 
 .wrapper header {
@@ -54,7 +53,7 @@ form .dbl-field {
     height: 50px;
     display: flex;
     position: relative;
-    width: calc(1008% / 2 - 13px);
+    width: calc(100% / 2 - 13px);
 }
 
 .wrapper form i {
@@ -64,7 +63,7 @@ form .dbl-field {
     color: #ccc;
     font-size: 17px;
     pointer-events: none;
-    transform: translateY (-50%);
+    transform: translateY(-50%);
 }
 
 form .field input,
@@ -72,7 +71,7 @@ form .message textarea {
     width: 100%;
     height: 100%;
     outline: none;
-    padding: 0 18px 0 43px;
+    padding: 0 18px 0 48px;
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -83,14 +82,14 @@ form .message textarea {
     color: #ccc;
 }
 
-field input:focus,
-•message textarea:focus {
+.field input:focus,
+.message textarea:focus {
     padding-left: 47px;
     border: 2px solid #0D6EFD;
 }
 
-.field input:focus~i,
-.message textarea:focus~i {
+.field input:focus ~ i,
+.message textarea:focus ~ i {
     color: ‡OD6EFD;
 }
 
@@ -98,12 +97,12 @@ form .message {
     position: relative;
 }
 
-form message i {
+form .message i {
     top: 30px;
     font-size: 20px;
 }
 
-form message textarea {
+form .message textarea {
     min-height: 130px;
     max-height: 230px;
     max-width: 1004;
@@ -111,7 +110,7 @@ form message textarea {
     padding: 15px 20px 0 48px;
 }
 
-form message textarea::-webkit-scrollbar {
+form .message textarea::-webkit-scrollbar {
     width: Opx;
 }
 
@@ -182,7 +181,7 @@ form .button-area {
         font-size: 16px;
     }
 
-    button-area span {
+    .button-area span {
         margin: 20px 0 0;
         text-align: center;
     }
